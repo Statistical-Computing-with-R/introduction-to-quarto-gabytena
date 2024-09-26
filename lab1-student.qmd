@@ -63,6 +63,7 @@ section (e.g., Tooth Growth Dataset).
 ```{r}
 #| echo: true
 #| label: creating-a-plot
+#| layout-nco: 2
 
 library(tidyverse)
 
@@ -76,6 +77,7 @@ ToothGrowth %>%
   ggplot(mapping = aes(x = dose, y = len)) +
   geom_boxplot() +
   labs(x = "Dose of Supplement (mg/day)", y = "Length of Teeth (mm)")
+
 ```
 
 Now, run this code chunk! You should see two side-by-side boxplots, one plot
@@ -91,4 +93,7 @@ should be **center aligned**.
 
 **Question 9** -- Specify a **figure caption** for the boxplots (using a
 code-chunk option).
+```{r}
+t.test(ToothGrowth$len, alternative = "two.sided", var.equal = FALSE)
+```
 

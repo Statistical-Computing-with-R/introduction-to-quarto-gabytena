@@ -3145,7 +3145,7 @@ vertical-align: -.125em;
 <section id="creating-a-plot" class="level2">
 <h2 class="anchored" data-anchor-id="creating-a-plot">Creating a Plot</h2>
 <p><strong>Question 6</strong> – Replace the <code>plot(pressure)</code> code with the code provided in the Lab 1 instructions.</p>
-<div class="cell">
+<div class="cell" data-layout-nco="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
@@ -3187,6 +3187,21 @@ vertical-align: -.125em;
 <p><strong>Question 7</strong> – Read over the <a href="https://quarto.org/docs/authoring/figures.html#computations">Quarto documentation on figure options</a> and add an option (<code>#|</code>) to the above code chunk to make the figures print side-by-side (i.e., in one row) in the rendered HTML file.</p>
 <p><strong>Question 8</strong> – Specify in the code chunk options that these boxplots should be <strong>center aligned</strong>.</p>
 <p><strong>Question 9</strong> – Specify a <strong>figure caption</strong> for the boxplots (using a code-chunk option).</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    One Sample t-test
+
+data:  ToothGrowth$len
+t = 19.051, df = 59, p-value &lt; 2.2e-16
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 16.83731 20.78936
+sample estimates:
+mean of x 
+ 18.81333 </code></pre>
+</div>
+</div>
 </section>
 </section>
 
