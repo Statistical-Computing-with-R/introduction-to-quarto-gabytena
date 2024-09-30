@@ -6,7 +6,7 @@ format: html
 editor: source
 embed-resources: true
 execute:
-  echo: false
+  echo: true
 ---
 
 # Part Two: Exploring Quarto Documents
@@ -64,6 +64,7 @@ section (e.g., Tooth Growth Dataset).
 #| echo: true
 #| label: creating-a-plot
 #| layout-ncol: 2
+#| layout: "true"
 
 library(tidyverse)
 
