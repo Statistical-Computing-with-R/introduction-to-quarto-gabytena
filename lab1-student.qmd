@@ -63,7 +63,7 @@ section (e.g., Tooth Growth Dataset).
 ```{r}
 #| echo: true
 #| label: creating-a-plot
-#| layout-nco: 2
+#| layout-ncol: 2
 
 library(tidyverse)
 
